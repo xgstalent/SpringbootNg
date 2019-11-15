@@ -1,3 +1,7 @@
+import { LoginModule } from './login/login.module';
+import { MainModule } from './main/main.module';
+import { BackModule } from './back/back.module';
+import { FrontModule } from './front/front.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -14,7 +18,7 @@ registerLocaleData(zh);
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
@@ -22,9 +26,14 @@ registerLocaleData(zh);
     NgZorroAntdModule,
     FormsModule,
     HttpClientModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    FrontModule,
+    BackModule,
+    MainModule,
+    LoginModule
   ],
-  providers: [{ provide: NZ_I18N, useValue: zh_CN }],
+  // providers: [{ provide: NZ_I18N, useValue: zh_CN }],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,0 +1,23 @@
+<div style="text-align: center;">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1>这是登录页面</h1>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div>
+        <nz-radio-group #platFrom>
+            <label nz-radio nzValue="1">前台登录</label>
+            <label nz-radio nzValue="2">后台登录</label>
+        </nz-radio-group>
+    </div>
+    <br>
+    <button nz-button nzType="primary" (click)="login(platFrom.writeValue)">登录</button>
+</div>

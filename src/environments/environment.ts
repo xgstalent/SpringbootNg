@@ -1,16 +1,14 @@
-// This file can be replaced during build by using the `fileReplacements` array.
-// `ng build --prod` replaces `environment.ts` with `environment.prod.ts`.
-// The list of file replacements can be found in `angular.json`.
 
-export const environment = {
-  production: false
-};
+// export const environment = {
+//   production: false
+// };
 
-/*
- * For easier debugging in development mode, you can import the following file
- * to ignore zone related error stack frames such as `zone.run`, `zoneDelegate.invokeTask`.
- *
- * This import should be commented out in production mode because it will have a negative impact
- * on performance if an error is thrown.
+/**
+ * 开发环境变量
  */
-// import 'zone.js/dist/zone-error';  // Included with Angular CLI.
+export const environment = {
+  production: false, //是否产品，这里一定是false，不要修改
+  useHash: true, //是否使用hash模式的路由
+  webPrefix: 'http://127.0.0.1:8188/sm/', //后端地址前缀
+  webSuffix: '.do',  //后端地址的后缀
+};
